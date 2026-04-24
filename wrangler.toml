@@ -23,9 +23,11 @@ service = "qiaomu-blog-opensource"
 
 [[d1_databases]]
 binding = "DB"
+database_id = "1d1defe3-7a78-43cc-a4c9-5fe1b07c73d6"
 
 [[r2_buckets]]
 binding = "IMAGES"
+bucket_name = "qiaomu-blog-images"
 
 # Optional Queue binding for background jobs. Uncomment after creating the queue.
 # [[queues.producers]]
@@ -36,9 +38,9 @@ binding = "IMAGES"
 # queue = "qiaomu-blog-background-jobs"
 
 [vars]
-NEXT_PUBLIC_SITE_URL = "https://your-domain.com"
-AI_BASE_URL = "https://api.openai.com/v1"
-AI_MODEL = "gpt-4o-mini"
+NEXT_PUBLIC_SITE_URL = "https://aiqiniang.com"
+AI_BASE_URL = "https://open.bigmodel.cn/api/paas/v4"
+AI_MODEL = "glm-4.7"
 WORKERS_AI_MODEL = "@cf/meta/llama-3.1-8b-instruct"
 # Optional enhancement flags. Leave unset/disabled for open-source or low-cost deployments.
 # ENABLE_BACKGROUND_JOBS = "true"
